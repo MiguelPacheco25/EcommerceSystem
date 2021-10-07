@@ -1,0 +1,96 @@
+.color-primary{
+    background-color: #2fb5d2;
+}
+
+.card-products-home{
+    width: 15em;
+    box-shadow: 5px 5px 5px rgb(161, 161, 161);
+}
+
+.fade-in-quickView {
+    opacity: 0;
+    transition: height 0.4s ease-in-out;
+    position: absolute;
+    height: 0em;
+    width: 100%;
+    bottom: 50px;
+    background: #ffffff;
+}
+.card-products-home:hover .fade-in-quickView {
+    opacity: 1;
+    height: 4em;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 60px);
+    min-width: calc(60% - 60px);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.card-product-modal{
+    box-shadow: 5px 5px 5px rgb(161, 161, 161);
+}
+
+.nav-shadow{
+    box-shadow: 2px 3px 2px rgb(218, 216, 216);
+}
+
+.navbar-brand-wrapper{
+    transition: width 0.25s ease, background 0.25s ease;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+    -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease;
+    background: #1c45ef;
+    width: 270px;
+    height: 63px;
+}
+
+.navbar.default-layout .navbar-menu-wrapper {
+    transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -ms-transition: width 0.25s ease;
+    color: #001737;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 270px);
+    height: 63px;
+    box-shadow: 0 4px 16px 0 rgb(167 175 183 / 33%);
+}
+
+.navbar.default-layout {
+    font-family: "roboto", sans-serif;
+    background: #fff;
+    transition: background 0.25s ease;
+    -webkit-transition: background 0.25s ease;
+    -moz-transition: background 0.25s ease;
+    -ms-transition: background 0.25s ease;
+}
+
+.card-mini-image{
+    width: 40%;
+    border: #2fb5d2 4px solid;
+}
+
+footer{
+    background-color: #000000;
+    color: white;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+
+
+
