@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MasterController;
+use App\Http\Controllers\ClotheController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +15,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::view('/dashboard', 'Dashboard.dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+Route::post('/clothe/store', [ClotheController::class, 'store'])->name('ClotheStore');
+
+
+
+
+Route::get('/clothes', function () {
+    return view('clothes');
+})->name('clothes');
+
+
+Route::get('/', [MasterController::class, 'index'])->name('home');
+
+
+require __DIR__.'/auth.php';
